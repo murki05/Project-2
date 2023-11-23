@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
+class ComputerPart
+{
+    public string Type { get; set; }
+    public string Name { get; set; }
+    public string Parameters { get; set; }
+    public int Price { get; set; }
+}
+
+class Program
+{
+    static List<ComputerPart> computerParts = new List<ComputerPart>();
+
+    static void Main()
+    {
+        LoadData();
+
+        while (true)
+        {
+            Console.WriteLine("1. Add New Component");
+            Console.WriteLine("2. Search");
+            Console.WriteLine("3. Statistics");
+            Console.WriteLine("4. Set Discounted Prices");
+            Console.WriteLine("5. Exit");
+
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    AddNewPart();
+                    break;
+                case 2:
+                    Search();
+                    break;
+                case 3:
+                    Statistics();
+                    break;
+                case 4:
+                    SetDiscount();
+                    break;
+                case 5:
+                    SaveData();
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Invalid option. Please, try again.");
+                    break;
+            }
+        }
+    }
