@@ -53,3 +53,62 @@ class Program
             }
         }
     }
+
+    static void LoadData()
+    {
+        if (File.Exists("computer_parts.txt"))
+        {
+            string[] lines = File.ReadAllLines("computer_parts.txt");
+            foreach (string line in lines)
+            {
+                string[] data = line.Split(';');
+                ComputerPart part = new ComputerPart
+                {
+                    Type = data[0],
+                    Name = data[1],
+                    Parameters = data[2],
+                    Price = int.Parse(data[3])
+                };
+                computerParts.Add(part);
+            }
+        }
+    }
+
+    static void SaveData()
+    {
+        List<string> lines = new List<string>();
+        foreach (ComputerPart part in computerParts)
+        {
+            lines.Add($"{part.Type};{part.Name};{part.Parameters};{part.Price}");
+        }
+        File.WriteAllLines("computer_parts.txt", lines);
+    }
+
+    static void AddNewPart()
+    {
+        Console.WriteLine("Type: ");
+        string type = Console.ReadLine();
+
+        Console.WriteLine("Name: ");
+        string name = Console.ReadLine();
+
+        Console.WriteLine("Parameters: ");
+        string parameters = Console.ReadLine();
+
+        Console.WriteLine("Price: ");
+        int price = int.Parse(Console.ReadLine());
+
+        ComputerPart newPart = new ComputerPart
+        {
+            Type = type,
+            Name = name,
+            Parameters = parameters,
+            Price = price
+        };
+
+        computerParts.Add(newPart);
+
+        SaveData();
+
+        Console.WriteLine("Component added successfully!");
+    }
