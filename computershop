@@ -112,3 +112,37 @@ class Program
 
         Console.WriteLine("Component added successfully!");
     }
+
+    static void Search()
+    {
+        Console.WriteLine("Search by type or name: ");
+        string searchTerm = Console.ReadLine();
+
+        var results = computerParts.Where(part =>
+            part.Type.ToLower().Contains(searchTerm.ToLower()) ||
+            part.Name.ToLower().Contains(searchTerm.ToLower())
+        );
+
+        PrintResults(results);
+    }
+
+    static void PrintResults(IEnumerable<ComputerPart> results)
+    {
+        foreach (ComputerPart part in results)
+        {
+            Console.WriteLine($"Type: {part.Type}, Name: {part.Name}, Parameters: {part.Parameters}, Price: {part.Price} Ft");
+        }
+    }
+
+    static void Statistics()
+    {
+        int intelCount = computerParts.Count(part => part.Type.ToLower().Contains("intel"));
+        int amdCount = computerParts.Count(part => part.Type.ToLower().Contains("amd"));
+        int nvidiaCount = computerParts.Count(part => part.Type.ToLower().Contains("nvidia"));
+        int amdGraphicsCount = computerParts.Count(part => part.Type.ToLower().Contains("amd") && part.Type.ToLower().Contains("graphics"));
+
+        Console.WriteLine($"Number of CPUs manufactured by Intel: {intelCount}");
+        Console.WriteLine($"Number of CPUs manufactured by AMD: {amdCount}");
+        Console.WriteLine($"Number of GPUs manufactured by Nvidia: {nvidiaCount}");
+        Console.WriteLine($"Number of GPUs manufactured by AMD: {amdGraphicsCount}");
+    }
