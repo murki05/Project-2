@@ -146,3 +146,24 @@ class Program
         Console.WriteLine($"Number of GPUs manufactured by Nvidia: {nvidiaCount}");
         Console.WriteLine($"Number of GPUs manufactured by AMD: {amdGraphicsCount}");
     }
+
+    static void SetDiscount()
+    {
+        Console.WriteLine("Please set the discount percentage: ");
+        int discountPercentage = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Please choose the type of component (or leave empty to include all): ");
+        string typeFilter = Console.ReadLine();
+
+        foreach (ComputerPart part in computerParts)
+        {
+            if (string.IsNullOrEmpty(typeFilter) || part.Type.ToLower().Contains(typeFilter.ToLower()))
+            {
+                double discountedPrice = part.Price * (1 - discountPercentage / 100.0);
+                part.Price = (int)Math.Round(discountedPrice);
+            }
+        }
+
+        Console.WriteLine("Discounted prices set successfully!");
+    }
+}
