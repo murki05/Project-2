@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 class ComputerPart
 {
@@ -25,7 +26,8 @@ class Program
             Console.WriteLine("2. Search");
             Console.WriteLine("3. Statistics");
             Console.WriteLine("4. Set Discounted Prices");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. Generate HTML Code");
+            Console.WriteLine("6. Exit");
 
             int choice = int.Parse(Console.ReadLine());
 
@@ -44,6 +46,9 @@ class Program
                     SetDiscount();
                     break;
                 case 5:
+                    GenerateHtml();
+                    break;
+                case 6:
                     SaveData();
                     Environment.Exit(0);
                     break;
@@ -165,5 +170,27 @@ class Program
         }
 
         Console.WriteLine("Discounted prices set successfully!");
+    }
+    static void GenerateHtml()
+    {
+        StringBuilder htmlBuilder = new StringBuilder();
+
+        htmlBuilder.AppendLine("<div style=\"display: flex; flex-wrap: wrap;\">");
+
+        foreach (ComputerPart part in computerParts)
+        {
+            htmlBuilder.AppendLine($"  <div style=\"border: 1px solid #ccc; padding: 10px; margin: 10px; flex: 0 0 300px;\">");
+            htmlBuilder.AppendLine($"    <p><strong>Típus:</strong> {part.Type}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Név:</strong> {part.Name}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Paraméterek:</strong> {part.Parameters}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Ár:</strong> {part.Price} Ft</p>");
+            htmlBuilder.AppendLine($"  </div>");
+        }
+
+        htmlBuilder.AppendLine("</div>");
+
+        File.WriteAllText("generated_html.html", htmlBuilder.ToString());
+
+        Console.WriteLine("Az HTML kód generálva a generated_html.html fájlba.");
     }
 }
