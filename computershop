@@ -175,13 +175,13 @@ class Program
     {
     StringBuilder htmlBuilder = new StringBuilder();
 
-    htmlBuilder.AppendLine("<!DOCTYPE html>");
-    htmlBuilder.AppendLine("<html lang=\"en\">");
+    htmlBuilder.AppendLine("<DOCTYPE html>");
+    htmlBuilder.AppendLine("<html lang="en">");
     htmlBuilder.AppendLine("<head>");
-    htmlBuilder.AppendLine("  <meta charset=\"UTF-8\">");
-    htmlBuilder.AppendLine("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+    htmlBuilder.AppendLine("  <meta charset="utf-8">");
+    htmlBuilder.AppendLine("  <meta name="viewport" content="width=device-width, initial-scale=1.0">");
     htmlBuilder.AppendLine("  <title>Computer Parts</title>");
-    htmlBuilder.AppendLine("  <link rel=\"stylesheet\" href=\"styles.css\">"); // Hivatkozás a CSS fájlra
+    htmlBuilder.AppendLine("  <link rel="stylesheet" href="styles.css">");
     htmlBuilder.AppendLine("</head>");
     htmlBuilder.AppendLine("<body>");
 
@@ -189,7 +189,7 @@ class Program
 
     foreach (ComputerPart part in computerParts)
     {
-        htmlBuilder.AppendLine($"    <div class=\"card\">");
+        htmlBuilder.AppendLine($"    <div class="card">");
         htmlBuilder.AppendLine($"      <p><strong>Típus:</strong> {part.Type}</p>");
         htmlBuilder.AppendLine($"      <p><strong>Név:</strong> {part.Name}</p>");
         htmlBuilder.AppendLine($"      <p><strong>Paraméterek:</strong> {part.Parameters}</p>");
