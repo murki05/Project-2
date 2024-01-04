@@ -185,7 +185,7 @@ class Program
     htmlBuilder.AppendLine("</head>");
     htmlBuilder.AppendLine("<body>");
 
-    htmlBuilder.AppendLine("  <div class=\"container\">");
+    htmlBuilder.AppendLine("  <div class="container">");
 
     foreach (ComputerPart part in computerParts)
     {
