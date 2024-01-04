@@ -172,24 +172,41 @@ class Program
         Console.WriteLine("Discounted prices set successfully!");
     }
     static void GenerateHtml()
-    {
+{
     StringBuilder htmlBuilder = new StringBuilder();
 
-    htmlBuilder.AppendLine("<DOCTYPE html>");
-    htmlBuilder.AppendLine("<html lang="en">");
+    htmlBuilder.AppendLine("<!DOCTYPE html>");
+    htmlBuilder.AppendLine("<html lang=\"en\">");
     htmlBuilder.AppendLine("<head>");
-    htmlBuilder.AppendLine("  <meta charset="utf-8">");
-    htmlBuilder.AppendLine("  <meta name="viewport" content="width=device-width, initial-scale=1.0">");
+    htmlBuilder.AppendLine("  <meta charset=\"UTF-8\">");
+    htmlBuilder.AppendLine("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
     htmlBuilder.AppendLine("  <title>Computer Parts</title>");
-    htmlBuilder.AppendLine("  <link rel="stylesheet" href="styles.css">");
+    htmlBuilder.AppendLine("  <style>");
+    htmlBuilder.AppendLine("    body {");
+    htmlBuilder.AppendLine("      font-family: Arial, sans-serif;");
+    htmlBuilder.AppendLine("      margin: 20px;");
+    htmlBuilder.AppendLine("    }");
+    htmlBuilder.AppendLine("");
+    htmlBuilder.AppendLine("    .container {");
+    htmlBuilder.AppendLine("      display: flex;");
+    htmlBuilder.AppendLine("      flex-wrap: wrap;");
+    htmlBuilder.AppendLine("    }");
+    htmlBuilder.AppendLine("");
+    htmlBuilder.AppendLine("    .card {");
+    htmlBuilder.AppendLine("      border: 1px solid #ccc;");
+    htmlBuilder.AppendLine("      padding: 10px;");
+    htmlBuilder.AppendLine("      margin: 10px;");
+    htmlBuilder.AppendLine("      flex: 0 0 300px;");
+    htmlBuilder.AppendLine("    }");
+    htmlBuilder.AppendLine("  </style>");
     htmlBuilder.AppendLine("</head>");
     htmlBuilder.AppendLine("<body>");
 
-    htmlBuilder.AppendLine("  <div class="container">");
+    htmlBuilder.AppendLine("  <div class=\"container\">");
 
     foreach (ComputerPart part in computerParts)
     {
-        htmlBuilder.AppendLine($"    <div class="card">");
+        htmlBuilder.AppendLine($"    <div class=\"card\">");
         htmlBuilder.AppendLine($"      <p><strong>Típus:</strong> {part.Type}</p>");
         htmlBuilder.AppendLine($"      <p><strong>Név:</strong> {part.Name}</p>");
         htmlBuilder.AppendLine($"      <p><strong>Paraméterek:</strong> {part.Parameters}</p>");
@@ -204,5 +221,5 @@ class Program
 
     File.WriteAllText("generated_html.html", htmlBuilder.ToString());
 
-    Console.WriteLine("HTML code successfully generated.");
+    Console.WriteLine("Az HTML kód generálva a generated_html.html fájlba, és a styles.css hivatkozva.");
 }
