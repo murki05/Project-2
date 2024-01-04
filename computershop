@@ -1,4 +1,4 @@
-using System;
+sing System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -172,54 +172,27 @@ class Program
         Console.WriteLine("Discounted prices set successfully!");
     }
     static void GenerateHtml()
-{
-    StringBuilder htmlBuilder = new StringBuilder();
-
-    htmlBuilder.AppendLine("<!DOCTYPE html>");
-    htmlBuilder.AppendLine("<html lang="en">");
-    htmlBuilder.AppendLine("<head>");
-    htmlBuilder.AppendLine("  <meta charset="utf-8">");
-    htmlBuilder.AppendLine("  <meta name="viewport" content="width=device-width, initial-scale=1.0">");
-    htmlBuilder.AppendLine("  <title>Computer Parts</title>");
-    htmlBuilder.AppendLine("  <style>");
-    htmlBuilder.AppendLine("    body {");
-    htmlBuilder.AppendLine("      font-family: Arial, sans-serif;");
-    htmlBuilder.AppendLine("      margin: 20px;");
-    htmlBuilder.AppendLine("    }");
-    htmlBuilder.AppendLine("");
-    htmlBuilder.AppendLine("    .container {");
-    htmlBuilder.AppendLine("      display: flex;");
-    htmlBuilder.AppendLine("      flex-wrap: wrap;");
-    htmlBuilder.AppendLine("    }");
-    htmlBuilder.AppendLine("");
-    htmlBuilder.AppendLine("    .card {");
-    htmlBuilder.AppendLine("      border: 1px solid #ccc;");
-    htmlBuilder.AppendLine("      padding: 10px;");
-    htmlBuilder.AppendLine("      margin: 10px;");
-    htmlBuilder.AppendLine("      flex: 0 0 300px;");
-    htmlBuilder.AppendLine("    }");
-    htmlBuilder.AppendLine("  </style>");
-    htmlBuilder.AppendLine("</head>");
-    htmlBuilder.AppendLine("<body>");
-
-    htmlBuilder.AppendLine("  <div class="container">");
-
-    foreach (ComputerPart part in computerParts)
     {
-        htmlBuilder.AppendLine($"    <div class="card">");
-        htmlBuilder.AppendLine($"      <p><strong>Típus:</strong> {part.Type}</p>");
-        htmlBuilder.AppendLine($"      <p><strong>Név:</strong> {part.Name}</p>");
-        htmlBuilder.AppendLine($"      <p><strong>Paraméterek:</strong> {part.Parameters}</p>");
-        htmlBuilder.AppendLine($"      <p><strong>Ár:</strong> {part.Price} Ft</p>");
-        htmlBuilder.AppendLine($"    </div>");
+        StringBuilder htmlBuilder = new StringBuilder();
+
+        htmlBuilder.AppendLine("<div style=\"display: flex; flex-wrap: wrap;\">");
+
+        foreach (ComputerPart part in computerParts)
+        {
+            htmlBuilder.AppendLine($"  <div style=\"border: 1px solid #ccc; padding: 10px; margin: 10px; flex: 0 0 300px;\">");
+            htmlBuilder.AppendLine($"    <p><strong>Típus:</strong> {part.Type}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Név:</strong> {part.Name}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Paraméterek:</strong> {part.Parameters}</p>");
+            htmlBuilder.AppendLine($"    <p><strong>Ár:</strong> {part.Price} Ft</p>");
+            htmlBuilder.AppendLine($"  </div>");
+        }
+
+        htmlBuilder.AppendLine("</div>");
+
+        File.WriteAllText("generated_html.html", htmlBuilder.ToString());
+
+        Console.WriteLine("HTML code generated successfully.");
     }
-
-    htmlBuilder.AppendLine("  </div>");
-
-    htmlBuilder.AppendLine("</body>");
-    htmlBuilder.AppendLine("</html>");
-
-    File.WriteAllText("generated_html.html", htmlBuilder.ToString());
-
+}
     Console.WriteLine("HTML code successfully generated.");
 }
