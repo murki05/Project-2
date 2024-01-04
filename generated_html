@@ -25,15 +25,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- A C# kód által generált alkatrészek itt jelennek meg -->
         <div class="card">
             <p><strong>Típus:</strong> CPU</p>
             <p><strong>Név:</strong> Intel Core i5-13600K</p>
             <p><strong>Paraméterek:</strong> 3.5GHz 14-Core</p>
             <p><strong>Ár:</strong> 130000 Ft</p>
         </div>
-
-        <!-- További kártyák a többi alkatrészhez -->
     </div>
 </body>
 </html>
