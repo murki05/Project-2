@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html leng="hu">
+<head>
+  <title>Szamitogepesbolt</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+
+<header>
+
+</header>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Számítógépbolt</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Bevezetés</a></li>
+          <li><a href="#section2">Alaplap</a></li>
+          <li><a href="#section3">Processzor</a></li>
+          <li><a href="#section4">Memória</a></li>
+          <li><a href="#section5">Videokartya</a></li>
+          <li><a href="#section6">SSD</a></li>
+          <a class="navbar-brand" href="#section7">Perifériák:</a>
+          <li><a href="#section8">Monitor</a></li>
+          <li><a href="#section9">Billentyűzet</a></li>
+          <li><a href="#section10">Egér</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="dropdown show" style="margin-left: 1500px;">
+      <a class="termek" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>Kiválasztott Termékek</b>
+      </a>
+    
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="leugro">
+        <div id="productDescription">
+          <p id="kivalasztottalaplap"></p>
+          <p id="kivalasztottcpu"></p>
+          <p id="kivalasztottram"></p>
+          <p id="kivalasztottgpu"></p>
+          <p id="kivalasztottssd"></p>
+          <p id="kivalasztottmonitor"></p>
+          <p id="kivalasztottbill"></p>
+          <p id="kivalasztotteger"></p>
+          <p id="ossz"></p>
+          <p><input type="button" onclick="Purchase()" value="Megrendelés"></p>
+        </div>
+    </div>
+  </div>
+</nav>    
+
+
+<div id="section0" class="container-fluid" >
+  <h1 class="f">Egyedi számítógép összeállítás</h1>
+   
+</div>
+
+<div id="section1" class="container-fluid">
+  <h1>Bevezetés</h1>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6" id="rcorners2">
+        <h3>Áruház müodésének az elve:</h3>
+        <p>Lefele görgetve a szamítogep hardvereit láthatod, ezek özül választhatod ki számodra a megfelelőt </p>
+      </div>
+      <div class="col-sm-6" id="rcorners2">
+        <h3>Alkatrészek </h3>
+        <p> A tetszőleges hardvert megjelolve folytathatod a gépépítést.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section2" class="container-fluid" >
+  <h1>Alaplap</h1>
+  <p>
+    <table class="tablazat">
+      <tr>
+          <td><div class="card" style="width: 28rem;">
+            
+            <div class="card-body">
+              <img src="kepek/alaplap/asus rog.webp" alt="" class="center">
+              <h5 class="card-title">ASUS ROG STRIX B760-I GAMING WIFI</h5>
+              <p class="card-text">Intel LGA1700 socket,PCI Express 5.0,DDR5, 7600MHz (OC),WiFi, Bluetooth, 8-Channel hangkártya, mITX (Mini ITX) alaplap formátum</p>
+              <p class="card-ara">86 590 Ft</p>
+            </div>
+  
+          </div>
+        </td>
+          <td><div class="card" style="width: 28rem;" >
+            <div class="card-body">
+              <img src="kepek/alaplap/gigabyte.webp" alt="" class="center">
+              <h5 class="card-title">GIGABYTE B760M DS3H DDR4</h5>
+              <p class="card-text">Intel LGA1700 socket,PCI Express 4.0,DDR4,DisplayPort, 8-Channel hangkártya, mATX (Micro ATX) alaplap formátum</p>
+              <p class="card-ara">41 690 Ft</p>
+            </div>
+  
+          </div>
+        </td>
+          <td> <div class="card" style="width: 28rem;" >
+            <div class="card-body">
+              <img src="kepek/alaplap/msi.webp" alt=""class="center">
+              <h5 class="card-title">MSI PRO B760-P WIFI DDR4</h5>
+              <p class="card-text">Intel LGA1700 socket,PCI Express 4.0,DDR4, 5333MHz (OC),WiFi, Bluetooth, 8-Channel hangkártya, ATX alaplap formátum</p>
+              <p class="card-ara">56 690 Ft</p>
+
+            </div>
+            
+          </div>
+        </td>
+          <td><div class="card" style="width: 28rem;" >
+            <div class="card-body">
+              <img src="kepek/alaplap/asus tuf.webp" alt=""class="center">
+              <h5 class="card-title">ASUS TUF GAMING B760-PLUS WIFI D4</h5>
+              <p class="card-text">Intel LGA1700 socket,PCI Express 5.0,DDR4, 5333MHz (OC), WiFi, Bluetooth, 8-Channel hangkártya, ATX alaplap formátum</p>
+              <p class="card-ara">88 790 Ft</p>
+            </div>
+  
+          </div>
+        </td>
+          <td><div class="card" style="width: 28rem;">
+            <div class="card-body">
+              <img src="kepek/alaplap/asrock.webp" alt="" class="center">
+              <h5 class="">ASROCK B760M-ITX / D4 WiFi</h5>
+              <p class="card-text"> Intel LGA1700 socket, PCI Express 4.0,DDR4, 5333MHz (OC),WiFi, Bluetooth, 8-Channel hangkártya, mITX (Mini ITX) alaplap formátum</p>
+              <p class="card-ara">61 390 Ft</p>
+            </div>
+          </div>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <tr><td><input type="radio" id="alaplap_asus_rog" name="alaplap" onclick="showProductDescription('alaplap')">
+               <label for="alaplap_asus_rog">&larr; Vásárlás</label><br></td><td>
+          <input type="radio" id="alaplap_gigabyte" name="alaplap" onclick="showProductDescription('alaplap')" >
+                        <label for="alaplap_gigabyte">&larr; Vásárlás</label><br></td><td>
+            <input type="radio" id="alaplap_msi" name="alaplap" onclick="showProductDescription('alaplap')" >
+                          <label for="alaplap_msi">&larr; Vásárlás</label><br></td><td>
+              <input type="radio" id="alaplap_asus_tuf" name="alaplap" onclick="showProductDescription('alaplap')">
+                            <label for="alaplap_asus_tuf">&larr; Vásárlás</label><br></td><td>
+                <input type="radio" id="alaplap_asrock" name="alaplap" onclick="showProductDescription('alaplap')">
+                              <label for="alaplap_asrock">&larr; Vásárlás</label><br></td>
+      </tr>
+      
+   
+  </table>
+  </p>
+</div>
+
+<div id="section3" class="container-fluid">
+  <h1>Processzor</h1>
+  <table>
+    <tr>
+      
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/cpu/i5-12400f.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Intel Core i5-12400F</h5>
+            <p class="card-text">Processzor - 6 magos, 12-szálas, 2,5 GHz</p>
+            <p class="card-text">59 490 Ft</p>
+          </div>
+
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/cpu/i5-14600kf.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Intel Core i5-14600KF</h5>
+            <p class="card-text">Processzor - 14 magos, 20-szálas, 3,5 GHz</p>
+            <p class="card-text">129 190 Ft</p>
+          </div>
+
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/cpu/i7-13700kf.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Intel Core i7-13700KF</h5>
+            <p class="card-text">Processzor - 16 magos, 24-szálas, 3,4 GHz</p>
+            <p class="card-text">174 790 Ft</p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/cpu/i5-1260k.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Intel Core i5-12600K</h5>
+            <p class="card-text">Processzor - 10 magos, 16-szálas, 3,7 GHz</p>
+            <p class="card-text">110 090 Ft</p>
+          </div>
+
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/cpu/i9.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="">Intel Core i9-14900K</h5>
+            <p class="card-text">Processzor - 24 magos, 32-szálas, 3,2 GHz</p>
+            <p class="card-text">258 790 Ft</p>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr><td>                                                            <input type="radio" id="cpu_i5_12400" name="cpu" onclick="showProductDescription('cpu')">
+      <label for="cpu_i5_12400">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="cpu_i5_14600" name="cpu" onclick="showProductDescription('cpu')">
+        <label for="cpu_i5_14600">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="cpu_i7" name="cpu" onclick="showProductDescription('cpu')">
+          <label for="cpu_i7">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="cpu_i5_12600" name="cpu" onclick="showProductDescription('cpu')">
+            <label for="cpu_i5_12600">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="cpu_i9" name="cpu" onclick="showProductDescription('cpu')">
+              <label for="cpu_i9">&larr; Vásárlás</label><br></td></tr>
+    
+ 
+</table>
+</div>
+
+<div id="section4" class="container-fluid">
+  <h1>Memória</h1>
+  
+<table>
+  <tr>
+      <td><div class="card" style="width: 28rem;">
+        <img src="kepek/ram/fury 3200.webp" class="center">
+        <div class="card-body">
+          <h5 class="card-title">Kingston FURY 16GB </h5>
+          <p class="card-text">RAM memória - 1x16GB, DDR4 3200MHz CL16 Beast Black</p>
+          <p class="card-text">14 590 Ft</p>
+        </div>
+
+      </div>
+    </td>
+      <td><div class="card" style="width: 28rem;" >
+        <img src="kepek/ram/fury 32 3600.webp" alt="" class="center">
+        <div class="card-body">
+          <h5 class="card-title">Kingston FURY 32GB KIT</h5>
+          <p class="card-text">RAM memória - 2x16GB,DDR4 3600MHz CL16 Renegade Black 1Gx8 </p>
+          <p class="card-text">34 990 Ft</p>
+        </div>
+
+      </div>
+    </td>
+      <td> <div class="card" style="width: 28rem;" >
+        <img src="kepek/ram/hyperx.webp" alt=""class="center">
+        <div class="card-body">
+          <h5 class="card-title">HyperX 32GB</h5>
+          <p class="card-text">RAM memória - 1x32GB,  DDR4 3600MHz CL18 Predator RGB</p>
+          <p class="card-text">48 310 Ft</p>
+        </div>
+        
+      </div>
+    </td>
+      <td><div class="card" style="width: 28rem;" >
+        <img src="kepek/ram/corsair.webp" alt=""class="center">
+        <div class="card-body">
+          <h5 class="card-title">Corsair 32GB KI</h5>
+          <p class="card-text">RAM memória - 2x16GB, DDR4 4000MHz CL18 Vengeance RGB RT</p>
+          <p class="card-text">48 590 Ft</p>
+        </div>
+
+      </div>
+    </td>
+      <td><div class="card" style="width: 28rem;">
+        <img src="kepek/ram/g.skill ddr5.webp" alt="" class="center">
+        <div class="card-body">
+          <h5 class="">G.SKILL 32GB KIT</h5>
+          <p class="card-text">RAM memória - 2x16GB, DDR5 7200MHz CL34 Trident Z5 RGB Black</p>
+          <p class="card-text">63 090 Ft</p>
+
+        </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+  <tr><td><input type="radio" id="ram_fury16" name="ram" onclick="showProductDescription('ram')">
+    <label for="ram_fury16">&larr; Vásárlás</label><br></td><td><input type="radio" id="ram_fury32" name="ram" onclick="showProductDescription('ram')">
+      <label for="ram_fury32">&larr; Vásárlás</label><br></td><td><input type="radio" id="ram_hyperx" name="ram" onclick="showProductDescription('ram')">
+        <label for="ram_hyperx">&larr; Vásárlás</label><br></td><td><input type="radio" id="ram_corsair" name="ram" onclick="showProductDescription('ram')">
+          <label for="ram_corsair">&larr; Vásárlás</label><br></td><td><input type="radio" id="ram_gskill" name="ram" onclick="showProductDescription('ram')">
+            <label for="ram_gskill">&larr; Vásárlás</label><br></td></tr>
+  
+
+</table>
+
+</div>
+
+<div id="section5" class="container-fluid">
+  <h1>Videokártya</h1>
+  
+  <table>
+    <tr>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/gpu/asus dual.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">ASUS DUAL GeForce GTX 1650 </h5>
+            <p class="card-text">Videókártya - 4 GB GDDR6 (12000 MHz), NVIDIA GeForce,</p>
+            <p class="card-text">68 990 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/gpu/gigabyte3050.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">GIGABYTE GeForce RTX 3050 WINDFORCE OC</h5>
+            <p class="card-text">Videókártya - 8 GB GDDR6 (14000 MHz), NVIDIA GeForce </p>
+            <p class="card-text">103 390 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/gpu/msi.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">MSI GeForce RTX 3060 VENTUS 2X</h5>
+            <p class="card-text">Videókártya - 8 GB GDDR6 (15000 MHz), NVIDIA GeForce</p>
+            <p class="card-text">116 690 Ft</p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/gpu/intel.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Intel Arc A750</h5>
+            <p class="card-text">Videókártya - 8 GB GDDR6 (16000 MHz), Intel ARC</p>
+            <p class="card-text">110 090 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/gpu/asrock.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="">ASROCK Intel Arc A750 Challenger D</h5>
+            <p class="card-text">Videókártya - 8 GB GDDR6 (16000 MHz), Intel ARC</p>
+            <p class="card-text">102 090 Ft</p>
+
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr><td>            <input type="radio" id="gpu_asus" name="gpu" onclick="showProductDescription('gpu')">
+      <label for="gpu_asus">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="gpu_giga" name="gpu" onclick="showProductDescription('gpu')">
+        <label for="gpu_giga">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="gpu_msi" name="gpu" onclick="showProductDescription('gpu')">
+          <label for="gpu_msi">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="gpu_intel" name="gpu" onclick="showProductDescription('gpu')">
+          <label for="gpu_intel">&larr; Vásárlás</label><br></td><td>            <input type="radio" id="gpu_asrock" name="gpu" onclick="showProductDescription('gpu')">
+            <label for="gpu_asrock">&larr; Vásárlás</label><br></td></tr>
+    
+  
+  </table>
+
+</div>
+
+<div id="section6" class="container-fluid">
+  <h1>SSD</h1>
+  
+  <table>
+    <tr>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/ssd/samsung 990.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Samsung 990 PRO 1TB </h5>
+            <p class="card-text">SSD meghajtó - M,2 (PCIe 4,0 4x NVMe), TLC (Triple-Level Cell), 600 TBW elméleti élettartam</p>
+            <p class="card-text">43 690 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/ssd/samsung evo.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Samsung 870 EVO 1TB</h5>
+            <p class="card-text">SSD meghajtó - 2,5", SATA III, TLC (Triple-Level Cell), 600 TBW elméleti élettartam</p>
+            <p class="card-text">38 090 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/ssd/kingston 500.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Kingston FURY Renegade NVMe 500GB</h5>
+            <p class="card-text">SSD meghajtó - M,2 (PCIe 4,0 4x NVMe), TLC (Triple-Level Cell), 500 TBW elméleti élettartam</p>
+            <p class="card-text">25 990 Ft</p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/ssd/corsair.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Corsair MP700 1TB</h5>
+            <p class="card-text">SSD meghajtó - M,2 (PCIe 5,0 4x NVMe), TLC (Triple-Level Cell), 700 TBW elméleti élettartam</p>
+            <p class="card-text">69 290 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/ssd/apacer.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="">Apacer AS2280Q4U 2TB</h5>
+            <p class="card-text">SSD meghajtó - M,2 (PCIe 4,0 4x NVMe), 3D NAND, 1500 TBW elméleti élettartam</p>
+            <p class="card-text">50 290 Ft</p>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr><td><input type="radio" id="ssd_990" name="ssd" onclick="showProductDescription('ssd')">
+      <label for="ssd_990">&larr; Vásárlás</label><br></td><td><input type="radio" id="ssd_870" name="ssd" onclick="showProductDescription('ssd')">
+        <label for="ssd_870">&larr; Vásárlás</label><br></td><td><input type="radio" id="ssd_fury" name="ssd" onclick="showProductDescription('ssd')">
+          <label for="ssd_fury">&larr; Vásárlás</label><br></td><td><input type="radio" id="ssd_700" name="ssd" onclick="showProductDescription('ssd')">
+            <label for="ssd_700">&larr; Vásárlás</label><br></td><td><input type="radio" id="ssd_as22" name="ssd" onclick="showProductDescription('ssd')">
+              <label for="ssd_as22">&larr; Vásárlás</label><br></td></tr>
+
+  </table>
+</div>
+<div id="section7" class="container-fluid" class="navbar-header" >
+  <h1 style="text-align: center;">Periferiák</h1>
+</div>
+
+<div id="section8" class="container-fluid">
+  <h1>Monitor</h1>
+
+  <table>
+    <tr>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/monitor/msi 27.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">27" MSI G274QPF-QD</h5>
+            <p class="card-text">LCD monitor - Quad HD 2560 × 1440, IPS, 16:9 képarány, 1 ms válaszidő, 170Hz képfrissítési gyakoriság</p>
+            <p class="card-text">113 290 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/monitor/samsung 28.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">28" Samsung Odyssey G70B</h5>
+            <p class="card-text">LCD monitor - 4K 3840 × 2160, IPS, 16:9 képarány, 1 ms válaszidő, 144Hz képfrissítési gyakoriság</p>
+            <p class="card-text">210 490 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/monitor/lg27.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">27" LG 27GR75Q-B</h5>
+            <p class="card-text">LCD monitor - Quad HD 2560 × 1440, IPS, 16:9 képarány, 1 ms válaszidő, 165Hz képfrissítési gyakoriság</p>
+            <p class="card-text">95 000 F</p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/monitor/aoc24.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">24" AOC 24G2ZU</h5>
+            <p class="card-text">LCD monitor - Full HD 1920 × 1080, IPS, 16:9 képarány, 0,05 ms válaszidő, 240Hz képfrissítési gyakorisá</p>
+            <p class="card-text">101 890 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/monitor/aoc34.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="">34" AOC U34E2M</h5>
+            <p class="card-text">LCD monitor - Ultra Wide QHD 3440 × 1440, VA, 21:9 képarány ultrawide, 4 ms válaszidő, 100Hz képfrissítési gyakoriság</p>
+            <p class="card-text">126 990 Ft</p>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr><td>                                          <input type="radio" id="mon_msi" name="monitor" onclick="showProductDescription('monitor')">
+      <label for="mon_msi">&larr; Vásárlás</label></td><td><input type="radio" id="mon_sam" name="monitor" onclick="showProductDescription('monitor')">
+        <label for="mon_sam">&larr; Vásárlás</label></td><td><input type="radio" id="mon_lg" name="monitor" onclick="showProductDescription('monitor')">
+          <label for="mon_lg">&larr; Vásárlás</label></td><td><input type="radio" id="mon_aoc24" name="monitor" onclick="showProductDescription('monitor')">
+            <label for="mon_aoc24">&larr; Vásárlás</label></td><td><input type="radio" id="mon_aoc34" name="monitor" onclick="showProductDescription('monitor')">
+              <label for="mon_aoc34">&larr; Vásárlás</label></td></tr>
+  </table>
+
+<div id="section9" class="container-fluid">
+  <h1>Billentyűzet</h1>
+
+  <table>
+    <tr>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/bill/steel 60.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">SteelSeries Apex 3 TKL - US</h5>
+            <p class="card-text">Gamer billentyűzet - gamer és Tenkeyless, vezetékes, hagyományos , dinamikus háttérvilágítással, programozható makró gombok, us kiosztás, USB, vízálló, cserélhető kapcsolók, cserélhető gombok, fém váz, fekete</p>
+            <p class="card-text">23 490 Ftt</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/bill/hyperx.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">HyperX Alloy Origins Red - US</h5>
+            <p class="card-text">Gamer billentyűzet - gamer, vezetékes, programozható makró gombok, us kiosztás, USB, fekete</p>
+            <p class="card-text">43 190 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/bill/logi.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Logitech G915 LIGHTSPEED TKL</h5>
+            <p class="card-text">Gamer billentyűzet - gamer, vezeték nélküli, amerikai kosztás, USB, cserélhető gombok, fekete</p>
+            <p class="card-text">131 290 Ft</p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/bill/razer.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Razer BlackWidow V3 Tenkeyless</h5>
+            <p class="card-text">Gamer billentyűzet - gamer, vezetékes, amerikai kiosztás, USB, cserélhető gombok, fekete</p>
+            <p class="card-text">37 990 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/bill/asus.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="">ASUS ROG Strix Scope RX TKL Wireless</h5>
+            <p class="card-text">Gamer billentyűzet - irodai, gamer és ergonomikus, vezeték nélküli, háttérvilágítással,ROG RX Red kapcsolók, magyar kiosztás, Vezeték nélküli, fekete</p>
+            <p class="card-text">62 990 Ft</p>
+          </div>
+        </div>
+      </div>
+      </td>
+    </tr>
+    <tr><td>           <input type="radio" id="bill_steel" name="bill" onclick="showProductDescription('bill')">
+      <label for="bill_steel">&larr; Vásárlás</label></td><td>           <input type="radio" id="bill_hyperx" name="bill" onclick="showProductDescription('bill')">
+        <label for="bill_hyperx">&larr; Vásárlás</label></td><td>           <input type="radio" id="bill_logi" name="bill" onclick="showProductDescription('bill')">
+          <label for="bill_logi">&larr; Vásárlás</label></td><td>           <input type="radio" id="bill_razer" name="bill" onclick="showProductDescription('bill')"> 
+            <label for="bill_razer">&larr; Vásárlás</label></td><td>           <input type="radio" id="bill_asus" name="bill" onclick="showProductDescription('bill')">
+              <label for="bill_asus">&larr; Vásárlás</label></td></tr>
+  </table>
+
+<div id="section10" class="container-fluid">
+  <h1>Egér</h1>
+
+  <table>
+    <tr>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/eger/logi 502.webp" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Logitech G502 HeroS</h5>
+            <p class="card-text">Gamer egér - akár 25.600dpi, 400IPS, memória tárolására profilok, 11 programozható gombok, HERO 25k érzékelő</p>
+            <p class="card-text">19 990 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/eger/rapture.webp" alt="" class="center">
+          <div class="card-body">
+            <h5 class="card-title">Rapture PYTHON STEALTH fekete</h5>
+            <p class="card-text">Gamer egér - vezetékes, optikai érzékelő Pixart PMW3327, 600 - 800 - 1200 - 1600 - 2400 - 3600 - 6200 DPI, 1 ms válaszidő</p>
+            <p class="card-text">8 190 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td> <div class="card" style="width: 28rem;" >
+          <img src="kepek/eger/corsair.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">Corsair DARKSTAR Wireless</h5>
+            <p class="card-text">Gamer egér - vezeték nélküli, optikai, csatlakozás módja bluetooth, USB, 26000 DPI érzékenység, Pixart PMW 3391 érzékelő, 0,5 ms válaszidő</p>
+            <p class="card-text">52 290 Ft </p>
+          </div>
+          
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;" >
+          <img src="kepek/eger/asus.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="card-title">ASUS ROG GLADIUS III</h5>
+            <p class="card-text">Gamer egér - vezetékes, jobbkezeseknek, optikai, csatlakozás módja USB, 1 elem, 19000 DPI érzékenység, DPI-váltás</p>
+            <p class="card-text">28 990 Ft</p>
+          </div>
+  
+        </div>
+      </td>
+        <td><div class="card" style="width: 28rem;">
+          <img src="kepek/eger/hyperx.webp" alt=""class="center">
+          <div class="card-body">
+            <h5 class="">HyperX Pulsefire Dart Black</h5>
+            <p class="card-text">Gamer egér - vezeték nélküli, jobbkezeseknek, optikai, csatlakozás módja vezeték nélküli USB vevőegység, integrált akkumulátor, 16000 DPI érzékenység</p>
+            <p class="card-text">34 890 Ft</p>
+          </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr><td>           <input type="radio" id="eger_logi" name="eger">
+      <label for="eger_logi">&larr; Vásárlás</label></td><td>           <input type="radio" id="eger_python" name="eger" onclick="showProductDescription('eger')">
+        <label for="eger_python">&larr; Vásárlás</label></td><td>           <input type="radio" id="eger_corsair" name="eger" onclick="showProductDescription('eger')">
+          <label for="eger_corsair">&larr; Vásárlás</label></td><td>           <input type="radio" id="eger_asus" name="eger" onclick="showProductDescription('eger')">
+            <label for="eger_asus">&larr; Vásárlás</label></td><td>           <input type="radio" id="eger_hyperx" name="eger" onclick="showProductDescription('eger')">
+              <label for="eger_hyperx">&larr; Vásárlás</label></td></tr>
+  </table>
+  </div>
+  <div id="section11" class="container-fluid" class="ertekeles">
+
+    <form action>
+
+      <div><label for="star"><h3>Értékelés: </h3></label></div>
+      <input type="number" id="star" max="5" min="1">
+      <input type="button" onclick="Ertekeles()" value="Küld.">
+      <div id="csillag">
+      </div>
+  </form>
+
+  </div>
+ 
+
+  
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

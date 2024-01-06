@@ -1,0 +1,105 @@
+
+body {
+  position: relative; 
+  
+  background-color: #2a2c2e
+}
+#section0 {padding-top:50px;height:300px;color: #fff; background-color: #2a2c2e; text-align: center; font-size:large;padding-top: 10%; }
+#section1 {padding-top:40px;height:400px;color: #fff; background-color: #2a2c2e;}
+#section2 {padding-top:50px;height:600px;color: #fff; background-color: #2a2c2e;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #2a2c2e;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color: #2a2c2e;}
+#section5 {padding-top:50px;height:550px;color: #fff; background-color: #2a2c2e;}
+#section6 {padding-top:50px;height:415px;color: #fff; background-color: #2a2c2e;}
+#section7 {padding-top:50px;height:200px;color: #fff; background-color: #2a2c2e;}
+#section8 {padding-top:50px;height:700px;color: #fff; background-color: #2a2c2e;}
+#section9 {padding-top:50px;height:700px;color: #fff; background-color: #2a2c2e;}
+#section10 {padding-top:50px;height:500px;color: #fff; background-color: #2a2c2e;}
+#section11 {padding-top:50px;height:300px;color: #fff; background-color: #2a2c2e;}
+
+
+h4{
+  padding: 10px;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #fff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(21, 208, 241, 0.8) -6px -2px 16px 0px;
+  
+  padding: 20px; 
+  width: 480px;
+  height: 250px;  
+  margin: 50px 30px 3px 60px
+}
+
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px;
+  padding: 25px; 
+  width: auto;
+  height: 250px;  
+  margin: 40px auto 30px auto;
+}
+ul {
+  list-style: square;
+  list-style-position:unset;
+  
+}
+li{
+  margin-top: 25px;
+}
+table {
+  border-spacing: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: 20px ;
+  padding: 70px;
+  
+}
+card-body{
+  font-size: medium;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  
+}
+.card-text{
+  text-align: center;
+}
+.card-title{
+  text-align: center;
+}
+
+#main{
+  margin-left: 5em;
+  size: 3em;
+}
+
+img{
+  width: 3%;
+  height: 3%;
+}
+
+input{
+  background-color: rgb(40, 40, 40);
+  color: lightgray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+#csillag{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leugro{
+  background-color: #707070;
+  margin-right: 10%;
+  color: white;
+}
+
